@@ -33,9 +33,11 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/+2348079325361" target="_blank">
           <button className="px-6 py-3 flex items-center gap-2 rounded-full bg-white text-gray-900 font-semibold hover:bg-gray-100 transition">
             <BsWhatsapp /> Message Us
           </button>
+          </a>
           <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-customYellow text-white font-semibold hover:bg-yellow-600 transition">
             <Mail size={18} /> Send an Email
           </button>
