@@ -16,8 +16,8 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-200 pt-16 pb-8 relative overflow-hidden">
       {/* Decorative blobs */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-customYellow/10 blur-3xl rounded-full"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-pink-500/10 blur-3xl rounded-full"></div>
+      {/* <div className="absolute top-0 left-0 w-64 h-64 bg-customYellow/10 blur-3xl rounded-full"></div> */}
+      {/* <div className="absolute bottom-0 right-0 w-64 h-64 bg-pink-500/10 blur-3xl rounded-full"></div> */}
 
       <div className="relative container mx-auto px-6 z-10">
         {/* Brand & Tagline */}
