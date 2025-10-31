@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react"; // Lucide icon for checkmarks
+import FadeIn from "./fadein";
 
 const WhyChooseUs = () => {
   const reasons = [
@@ -30,6 +31,7 @@ const WhyChooseUs = () => {
         {/* List of reasons */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
           {reasons.map((reason, index) => (
+            <FadeIn duration={200}>
             <div
               key={index}
               className="flex items-start gap-4 bg-customYellow/10 rounded-3xl p-6 shadow-md hover:shadow-lg transition"
@@ -37,6 +39,7 @@ const WhyChooseUs = () => {
               <CheckCircle className="w-6 h-6 text-customYellow flex-shrink-0 mt-1" />
               <p className="text-gray-800 font-medium leading-relaxed">{reason}</p>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>

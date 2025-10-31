@@ -4,17 +4,18 @@ import About from '../Components/About'
 import WhatWeDo from '../Components/WhatWeDo'
 import Portfolio from '../Components/Porfolio'
 import WhyChooseUs from '../Components/WhyChooseUs'
-import Footer from '../Components/Footer'
+import Stats from '../Components/Stats'
 
 const HomePage = () => {
   return (
     <div>
         <HeroSection />
+        <Stats />
         <About />
         <WhatWeDo />
         <Portfolio />
         <WhyChooseUs />
-        <Footer />
+        
     </div>
   )
 }

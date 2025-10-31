@@ -16,7 +16,11 @@ const Navbar = () => {
       },
       {
         name: "Why choose Us",
-        link: "/advantages"
+        link: "/whychooseus"
+      },
+      {
+        name: "Portfolio",
+        link: "/portfolio"
       },
       {
         name: "Contact",

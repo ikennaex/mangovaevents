@@ -1,5 +1,6 @@
 import React from "react";
 import { portfolioImg } from "../imports"; // replace with actual import for your image or video thumbnail
+import { Link } from "react-router";
 
 const Portfolio = () => {
   return (
@@ -102,9 +103,11 @@ const Portfolio = () => {
           </div>
         </div>
 
+        <Link to={"/portfolio"}>
         <button className="mt-5 px-6 py-3 flex items-center gap-2 rounded-full bg-customYellow text-gray-900 mx-auto font-semibold hover:bg-gray-100 transition">
           View more
         </button>
+        </Link>
       </div>
     </section>
   );

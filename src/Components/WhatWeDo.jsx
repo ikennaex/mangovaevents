@@ -11,6 +11,7 @@ import {
   Briefcase,
   Globe,
 } from "lucide-react";
+import FadeIn from "./fadein";
 
 const services = [
   {
@@ -74,6 +75,7 @@ const WhatWeDo = () => {
         {/* Grid */}
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
+            <FadeIn duration={100}>
             <div
               key={index}
               className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-all duration-300 border border-transparent hover:border-pink-200"
@@ -86,6 +88,7 @@ const WhatWeDo = () => {
                 {service.description}
               </p>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>

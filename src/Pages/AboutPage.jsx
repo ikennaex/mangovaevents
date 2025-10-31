@@ -1,9 +1,7 @@
 import React from "react";
 import { img1, ceoImg } from "../imports";
-import { Link } from "react-router";
-import FadeIn from "./fadein";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <section className="relative bg-customYellow/30 py-16 overflow-hidden">
       {/* Floating colorful blobs */}
@@ -12,7 +10,6 @@ const About = () => {
       <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-blue-400/30 rounded-full blur-3xl animate-pulse -translate-x-1/2 -translate-y-1/2"></div>
 
       {/* About Section */}
-      <FadeIn duration={100}>
       <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 z-10">
         {/* About Image */}
         <img
@@ -38,7 +35,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      </FadeIn>
 
       {/* Our Story Section */}
       <div className="relative container mx-auto px-6 mt-20 flex flex-col md:flex-row items-center gap-10 z-10">
@@ -62,6 +58,20 @@ const About = () => {
             your vision.
           </p>
 
+          <p className="mt-4 text-gray-700 leading-relaxed">
+            At Magnova, collaboration is at the heart of everything we do. Every
+            client is a partner in creation, and every project is a chance to
+            push boundaries. Whether it is a wedding that captures timeless love
+            or a product launch that defines a brand, we transform ideas into
+            extraordinary realities.
+          </p>
+
+          <p className="mt-4 text-gray-700 leading-relaxed">
+            We are not just event planners; we are storytellers, dream-builders,
+            and vibe curators, creating spaces where moments become memories and
+            ideas create impact. So whether you are here to celebrate, connect,
+            or make a statement, let us make it unforgettable.
+          </p>
         </div>
 
         {/* CEO Image */}
@@ -86,15 +96,9 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        <Link to={"/about"}>
-          <button className="mt-5 px-6 py-3 flex items-center gap-2 rounded-full bg-white text-gray-900 font-semibold hover:bg-gray-100 transition">
-            Read more
-          </button>
-        </Link>
       </div>
     </section>
   );
 };
 
-export default About;
+export default AboutPage;
