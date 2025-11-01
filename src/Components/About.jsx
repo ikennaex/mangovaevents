@@ -1,7 +1,7 @@
 import React from "react";
 import { img1, ceoImg } from "../imports";
 import { Link } from "react-router";
-import FadeIn from "./fadein";
+import FadeIn from "./Fadein";
 
 const About = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { Play, Calendar, Briefcase, Users, Mail } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
 import { herovideo } from "../imports";
-import FadeIn from "./fadein";
+import FadeIn from "./Fadein";
 
 const HeroSection = () => {
   return (

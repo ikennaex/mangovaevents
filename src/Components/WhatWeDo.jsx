@@ -11,7 +11,7 @@ import {
   Briefcase,
   Globe,
 } from "lucide-react";
-import FadeIn from "./fadein";
+import FadeIn from "./Fadein";
 
 const services = [
   {
