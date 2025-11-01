@@ -6,7 +6,7 @@ import FadeIn from "./Fadein";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center bg-cover bg-center text-white pt-24 md:pt-0 pb-7">
+    <section className="pt-36 relative w-full min-h-screen flex flex-col justify-center bg-cover bg-center text-white pt-24 md:pt-0 pb-7">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={herovideo}

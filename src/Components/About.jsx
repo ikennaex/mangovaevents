@@ -86,13 +86,13 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
 
         <Link to={"/about"}>
-          <button className="mt-5 px-6 py-3 flex items-center gap-2 rounded-full bg-white text-gray-900 font-semibold hover:bg-gray-100 transition">
+          <button className="mx-auto mt-5 px-6 py-3 flex items-center gap-2 rounded-full bg-white text-gray-900 font-semibold hover:bg-gray-100 transition">
             Read more
           </button>
         </Link>
-      </div>
     </section>
   );
 };

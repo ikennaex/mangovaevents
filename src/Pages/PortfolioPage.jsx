@@ -9,6 +9,7 @@ import {
   portfoliovideo5,
   portfoliovideo6,
 } from "../imports";
+import FadeIn from "../Components/Fadein";
 
 const PortfolioPage = () => {
   const portfolioItems = [
@@ -23,7 +24,7 @@ const PortfolioPage = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16 pt-36">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-12">
           Our <span className="text-customYellow">Portfolio</span>
@@ -31,6 +32,7 @@ const PortfolioPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
+            <FadeIn duration={100}>
             <div
               key={index}
               className="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
@@ -59,6 +61,7 @@ const PortfolioPage = () => {
                 </h3>
               </div>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>

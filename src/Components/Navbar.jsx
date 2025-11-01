@@ -1,97 +1,107 @@
-import React, { useRef, useState } from 'react'
-import { Link } from 'react-router'
+import React, { useState } from "react";
+import { Link } from "react-router";
 import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
-import { logo } from '../imports';
+import { logo } from "../imports";
 
 const Navbar = () => {
-    const menuItems = [
-      {
-        name: "About Us",
-        link: "/about"
-      },
-      {
-        name: "Services",
-        link: "/services"
-      },
-      {
-        name: "Why choose Us",
-        link: "/whychooseus"
-      },
-      {
-        name: "Portfolio",
-        link: "/portfolio"
-      },
-      {
-        name: "Contact",
-        link: "/contact"
-      },
-    ]
+  const [open, setOpen] = useState(false);
 
-  const [open, setOpen] = useState(false)
-
-  const toggle = () => {
-    setOpen(!open)
-  }
+  const menuItems = [
+    { name: "About Us", link: "/about" },
+    { name: "Services", link: "/services" },
+    { name: "Why Choose Us", link: "/whychooseus" },
+    { name: "Portfolio", link: "/portfolio" },
+    { name: "Contact", link: "/contact" },
+  ];
 
   return (
-    <div className='container mx-auto px-9 py-4'>
-        <div className='lg:py-0.5 flex items-center justify-between'>
-        <Link to = "/" >
-        <img className='lg:h-26 lg:mr-60 h-14' src= {logo} alt="" />
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-12 sm:h-14 object-contain transition-transform duration-300 hover:scale-105"
+          />
         </Link>
-        <div className='hidden gap-20 mx-auto lg:flex cursor-pointer'>
-            {menuItems.map(menu => (
-              menu.link.includes("#") ? 
-              <a href={menu.link} className='nav-link'>
-              <p className='nav-menu hover:text-customBlue'>{menu.name}</p>
-              {/* {menu.name} */}
-            </a>
 
-              :
-              <Link to={menu.link} className='nav-link'>
-                <p className='nav-menu hover:text-customBlue'>{menu.name}</p>
-                {/* {menu.name} */}
-              </Link>
-
-              // <a href= {menu.link}>
-              // </a>
-            ))}
-        </div>
-
-        <div className='lg:hidden' onClick={toggle}>
-          {open? <IoClose  size={40} className='menu-icon' /> : <IoIosMenu size={40} className='menu-icon' /> }
-        </div>
-
-
-
-        </div>
-        <div>
-            {open && 
-          <div className='flex flex-col gap-5 py-5'>
-            {menuItems.map((menu) => {
-              return (
-              menu.link.includes("#") ? 
-              <a href={menu.link} className='nav-link border-b-2 '>
-              {menu.name}
-              {/* {menu.name} */}
-            </a>
-
-              :
-              <Link to={menu.link} className='nav-link border-b-2'>
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex items-center gap-10">
+          {menuItems.map((menu, index) =>
+            menu.link.includes("#") ? (
+              <a
+                key={index}
+                href={menu.link}
+                className="text-gray-800 hover:text-customYellow font-semibold transition duration-300 relative group"
+              >
                 {menu.name}
-                {/* {menu.name} */}
+                <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-customYellow transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            ) : (
+              <Link
+                key={index}
+                to={menu.link}
+                className="text-gray-800 hover:text-customYellow font-semibold transition duration-300 relative group"
+              >
+                {menu.name}
+                <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-customYellow transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              )
-
-              
-            })}
-          </div>
-          }
+            )
+          )}
         </div>
-    </div>
 
-  )
-}
+        {/* Mobile Toggle */}
+        <div className="lg:hidden">
+          {open ? (
+            <IoClose
+              size={36}
+              className="text-gray-800 cursor-pointer"
+              onClick={() => setOpen(false)}
+            />
+          ) : (
+            <IoIosMenu
+              size={36}
+              className="text-gray-800 cursor-pointer"
+              onClick={() => setOpen(true)}
+            />
+          )}
+        </div>
+      </div>
 
-export default Navbar
+      {/* Mobile Dropdown */}
+      <div
+        className={`lg:hidden bg-white/95 backdrop-blur-lg shadow-inner transition-all duration-500 overflow-hidden ${
+          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="flex flex-col items-start gap-4 px-6 py-4">
+          {menuItems.map((menu, index) =>
+            menu.link.includes("#") ? (
+              <a
+                key={index}
+                href={menu.link}
+                onClick={() => setOpen(false)}
+                className="w-full text-gray-800 hover:text-customYellow font-medium border-b border-gray-200 pb-2 transition"
+              >
+                {menu.name}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                to={menu.link}
+                onClick={() => setOpen(false)}
+                className="w-full text-gray-800 hover:text-customYellow font-medium border-b border-gray-200 pb-2 transition"
+              >
+                {menu.name}
+              </Link>
+            )
+          )}
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

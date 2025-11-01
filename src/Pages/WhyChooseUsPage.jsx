@@ -3,7 +3,7 @@ import WhyChooseUs from '../Components/WhyChooseUs'
 
 const WhyChooseUsPage = () => {
   return (
-    <div>
+    <div className='pt-36'>
         <WhyChooseUs />
     </div>
   )

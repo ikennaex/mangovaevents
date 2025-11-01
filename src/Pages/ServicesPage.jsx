@@ -11,6 +11,7 @@ import {
   Globe,
   Briefcase,
 } from "lucide-react";
+import FadeIn from "../Components/Fadein";
 
 const services = [
   {
@@ -83,7 +84,7 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <section className="w-full py-20 bg-gray-50" id="what-we-do">
+    <section className="pt-36 w-full py-20 bg-gray-50" id="what-we-do">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Header */}
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
@@ -97,6 +98,7 @@ const ServicesPage = () => {
         {/* Services Grid */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
+            <FadeIn duration={100}>
             <div
               key={index}
               className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-pink-200"
@@ -109,6 +111,7 @@ const ServicesPage = () => {
                 {service.description}
               </p>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>

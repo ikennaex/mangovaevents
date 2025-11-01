@@ -5,6 +5,7 @@ import WhatWeDo from '../Components/WhatWeDo'
 import Portfolio from '../Components/Porfolio'
 import WhyChooseUs from '../Components/WhyChooseUs'
 import Stats from '../Components/Stats'
+import Testimonials from '../Components/Testimonials'
 
 const HomePage = () => {
   return (
@@ -15,7 +16,7 @@ const HomePage = () => {
         <WhatWeDo />
         <Portfolio />
         <WhyChooseUs />
-        
+        <Testimonials />
     </div>
   )
 }

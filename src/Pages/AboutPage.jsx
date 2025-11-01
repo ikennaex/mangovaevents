@@ -1,15 +1,17 @@
 import React from "react";
 import { img1, ceoImg } from "../imports";
+import FadeIn from "../Components/Fadein";
 
 const AboutPage = () => {
   return (
-    <section className="relative bg-customYellow/30 py-16 overflow-hidden">
+    <section className="pt-36 relative bg-customYellow/30 py-16 overflow-hidden">
       {/* Floating colorful blobs */}
       <div className="absolute top-10 left-10 w-56 h-56 bg-pink-400/40 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-400/40 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-blue-400/30 rounded-full blur-3xl animate-pulse -translate-x-1/2 -translate-y-1/2"></div>
 
       {/* About Section */}
+      <FadeIn duration={100}>
       <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 z-10">
         {/* About Image */}
         <img
@@ -35,8 +37,10 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
+      </FadeIn>
 
       {/* Our Story Section */}
+      <FadeIn duration={300}>
       <div className="relative container mx-auto px-6 mt-20 flex flex-col md:flex-row items-center gap-10 z-10">
         <div className="md:w-1/2">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -97,6 +101,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };
