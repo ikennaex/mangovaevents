@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router";
 import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
 import { logo } from "../imports";
 
 const Navbar = () => {
@@ -50,6 +51,15 @@ const Navbar = () => {
               </Link>
             )
           )}
+
+          {/* Phone Number */}
+          <a
+            href="tel:+2348079325361"
+            className="flex items-center gap-2 text-customYellow font-semibold hover:text-yellow-500 transition"
+          >
+            <FaPhoneAlt className="text-lg" />
+            +234 807 932 5361
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -98,6 +108,15 @@ const Navbar = () => {
               </Link>
             )
           )}
+
+          {/* Mobile Phone Number */}
+          <a
+            href="tel:+2348079325361"
+            className="flex items-center gap-2 text-customYellow font-semibold pt-2"
+          >
+            <FaPhoneAlt className="text-lg" />
+            +234 807 932 5361
+          </a>
         </div>
       </div>
     </nav>
