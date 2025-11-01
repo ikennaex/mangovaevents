@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
         {/* List of reasons */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
           {reasons.map((reason, index) => (
-            <FadeIn duration={200}>
+            <FadeIn duration={100}>
             <div
               key={index}
               className="flex items-start gap-4 bg-customYellow/10 rounded-3xl p-6 shadow-md hover:shadow-lg transition"
