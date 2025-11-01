@@ -11,6 +11,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { BsTiktok, BsWhatsapp } from "react-icons/bs";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -58,11 +59,11 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-3 text-gray-300">
-              <li><a href="/" className="hover:text-customYellow transition">Home</a></li>
-              <li><a href="/about" className="hover:text-customYellow transition">About</a></li>
-              <li><a href="/services" className="hover:text-customYellow transition">Services</a></li>
-              <li><a href="/portfolio" className="hover:text-customYellow transition">Portfolio</a></li>
-              <li><a href="/contact" className="hover:text-customYellow transition">Contact</a></li>
+              <li><Link  to="/" className="hover:text-customYellow transition">Home</Link></li>
+              <li><Link to="/about" className="hover:text-customYellow transition">About</Link></li>
+              <li><Link to="/services" className="hover:text-customYellow transition">Services</Link></li>
+              <li><Link to="/portfolio" className="hover:text-customYellow transition">Portfolio</Link></li>
+              <li><Link to="/contact" className="hover:text-customYellow transition">Contact</Link></li>
             </ul>
           </div>
 
