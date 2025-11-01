@@ -2,13 +2,34 @@ import React from "react";
 import { Star, ShieldCheck, Smile, Users } from "lucide-react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { img1 } from "../imports";
 
 const Stats = () => {
   const stats = [
-    { icon: <Star size={40} />, number: 98, suffix: "%", label: "5 Star Customer Ratings" },
-    { icon: <ShieldCheck size={40} />, number: 98, suffix: "%", label: "Service Guaranteed" },
-    { icon: <Smile size={40} />, number: 100, suffix: "+", label: "Happy Clients" },
-    { icon: <Users size={40} />, number: 5, suffix: "+", label: "Years Of Experience" },
+    {
+      icon: <Star size={40} />,
+      number: 98,
+      suffix: "%",
+      label: "5 Star Customer Ratings",
+    },
+    {
+      icon: <ShieldCheck size={40} />,
+      number: 98,
+      suffix: "%",
+      label: "Service Guaranteed",
+    },
+    {
+      icon: <Smile size={40} />,
+      number: 100,
+      suffix: "+",
+      label: "Happy Clients",
+    },
+    {
+      icon: <Users size={40} />,
+      number: 5,
+      suffix: "+",
+      label: "Years Of Experience",
+    },
   ];
 
   // useInView hook to trigger animation when visible
@@ -22,7 +43,7 @@ const Stats = () => {
       ref={ref}
       className="relative bg-cover bg-center bg-no-repeat py-20 text-center"
       style={{
-        backgroundImage: "url('/src/assets/img1.jpg')", // replace with your actual image path
+        backgroundImage: `url(${img1})`,
       }}
     >
       {/* Overlay */}
@@ -38,11 +59,7 @@ const Stats = () => {
             >
               <div className="text-customYellow">{stat.icon}</div>
               <h2 className="text-2xl font-bold text-customYellow">
-                {inView ? (
-                  <CountUp end={stat.number} duration={2.5} />
-                ) : (
-                  0
-                )}{" "}
+                {inView ? <CountUp end={stat.number} duration={2.5} /> : 0}{" "}
                 {stat.suffix}
               </h2>
               <p className="text-lg font-medium">{stat.label}</p>
