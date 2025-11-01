@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react"; // Lucide icon for checkmarks
-import FadeIn from "./fadein";
+import FadeIn from "./Fadein";
 
 const WhyChooseUs = () => {
   const reasons = [
