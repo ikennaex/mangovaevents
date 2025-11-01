@@ -1,5 +1,14 @@
 import React from "react";
-import { portfolioImg, portfolioimg2, portfoliovideo1, portfoliovideo2, portfoliovideo3, portfoliovideo4, portfoliovideo5, portfoliovideo6 } from "../imports";
+import {
+  portfolioImg,
+  portfolioimg2,
+  portfoliovideo1,
+  portfoliovideo2,
+  portfoliovideo3,
+  portfoliovideo4,
+  portfoliovideo5,
+  portfoliovideo6,
+} from "../imports";
 
 const PortfolioPage = () => {
   const portfolioItems = [
@@ -35,8 +44,10 @@ const PortfolioPage = () => {
               ) : (
                 <video
                   src={item.src}
-                  controls
+                  autoPlay
                   muted
+                  loop
+                  playsInline
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               )}
