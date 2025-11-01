@@ -1,6 +1,7 @@
 import React from "react";
 import { portfolioImg } from "../imports"; // replace with actual import for your image or video thumbnail
 import { Link } from "react-router";
+import FadeIn from "./Fadein";
 
 const Portfolio = () => {
   return (
@@ -24,6 +25,7 @@ const Portfolio = () => {
         </p>
 
         {/* Video / Image section */}
+        <FadeIn>
         <div className="flex justify-center mb-16">
           <div className="relative w-full md:w-3/4 h-[400px] rounded-3xl overflow-hidden shadow-xl border-4 border-customYellow">
             {/* Example: Replace with your video or image */}
@@ -42,10 +44,12 @@ const Portfolio = () => {
             />
           </div>
         </div>
+        </FadeIn>
 
         {/* Mission, Vision, Values */}
         <div className="grid md:grid-cols-3 gap-10 text-left">
           {/* Mission */}
+          <FadeIn duration={200}>
           <div className="bg-customYellow/10 rounded-3xl p-8 shadow-md hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-customYellow mb-3">
               Our Mission
@@ -56,8 +60,10 @@ const Portfolio = () => {
               exceptional service, and client satisfaction at every stage.
             </p>
           </div>
+          </FadeIn>
 
           {/* Vision */}
+          <FadeIn duration={300}>
           <div className="bg-customYellow/10 rounded-3xl p-8 shadow-md hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-customYellow mb-3">
               Our Vision
@@ -68,8 +74,10 @@ const Portfolio = () => {
               elegance in every celebration.
             </p>
           </div>
+          </FadeIn>
 
           {/* Core Values */}
+          <FadeIn duration={400}>
           <div className="bg-customYellow/10 rounded-3xl p-8 shadow-md hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-customYellow mb-3">
               Our Core Values
@@ -101,6 +109,7 @@ const Portfolio = () => {
               </li>
             </ul>
           </div>
+          </FadeIn>
         </div>
 
         <Link to={"/portfolio"}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
+import FadeIn from "./Fadein";
 
 const testimonials = [
   {
@@ -43,6 +44,7 @@ const Testimonials = () => {
         {/* Scrollable Row (Mobile Friendly) */}
         <div className="flex overflow-x-auto gap-5 scrollbar-hide snap-x snap-mandatory px-2 sm:px-0">
           {testimonials.map((t, index) => (
+            <FadeIn duration={100}>
             <div
               key={index}
               className="min-w-[85%] sm:min-w-[350px] bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition duration-300 snap-center"
@@ -70,6 +72,7 @@ const Testimonials = () => {
               <h3 className="text-lg font-semibold text-gray-900">{t.name}</h3>
               <p className="text-customYellow font-medium text-sm">{t.role}</p>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>
