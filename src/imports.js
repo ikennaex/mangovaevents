@@ -10,6 +10,7 @@ import portfoliovideo3 from "./assets/portfoliovideo3.mp4";
 import portfoliovideo4 from "./assets/portfoliovideo4.mp4";
 import portfoliovideo5 from "./assets/portfoliovideo5.mp4";
 import portfoliovideo6 from "./assets/portfoliovideo6.mp4";
+import herosection1 from "./assets/herosection1.mp4";
 
 export {
   logo,
@@ -23,6 +24,6 @@ export {
   portfoliovideo3,
   portfoliovideo4,
   portfoliovideo5,
-  portfoliovideo6
-  
+  portfoliovideo6,
+  herosection1
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Play, Calendar, Briefcase, Users, Mail } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
-import { herovideo } from "../imports";
+import { herosection1 } from "../imports";
 import FadeIn from "./Fadein";
 
 const HeroSection = () => {
@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section className="pt-56 relative w-full min-h-screen flex flex-col justify-center bg-cover bg-center text-white pb-7">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src={herovideo}
+        src={herosection1}
         autoPlay
         loop
         muted
