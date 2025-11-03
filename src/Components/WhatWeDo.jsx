@@ -65,7 +65,7 @@ const WhatWeDo = () => {
     <section className="w-full py-20 bg-gray-50" id="what-we-do">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Header */}
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
           What We <span className="text-customYellow">Do</span>
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">

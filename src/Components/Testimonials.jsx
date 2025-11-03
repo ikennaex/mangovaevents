@@ -4,21 +4,21 @@ import FadeIn from "./Fadein";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Esther Makinwa",
     role: "Bride",
     image: "https://cdn-icons-png.flaticon.com/128/847/847969.png",
     text: "Magnova Events made our wedding day truly magical! Every detail was beyond perfect, and the team handled everything with so much care and creativity.",
     rating: 5,
   },
   {
-    name: "David Okoro",
+    name: "Micheal Okoro",
     role: "Corporate Client",
     image: "https://cdn-icons-png.flaticon.com/128/847/847969.png",
     text: "Professional, creative, and extremely organized. They transformed our product launch into an unforgettable experience that impressed our clients and partners.",
     rating: 5,
   },
   {
-    name: "Jessica Smith",
+    name: "Haruna Amina",
     role: "Event Host",
     image: "https://cdn-icons-png.flaticon.com/128/847/847969.png",
     text: "From planning to execution, Magnova delivered excellence. Their passion and attention to detail are unmatched. I’ll definitely work with them again!",
@@ -35,43 +35,40 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-12 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+        <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-10">
           What Our <span className="text-customYellow">Clients Say</span>
         </h2>
 
-        {/* Scrollable Row (Mobile Friendly) */}
-        <div className="flex overflow-x-auto gap-5 scrollbar-hide snap-x snap-mandatory px-2 sm:px-0">
+        {/* Responsive Grid with equal height cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {testimonials.map((t, index) => (
-            <FadeIn duration={100}>
-            <div
-              key={index}
-              className="min-w-[85%] sm:min-w-[350px] bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition duration-300 snap-center"
-            >
-              <img
-                src={t.image}
-                alt={t.name}
-                className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-customYellow"
-              />
+            <FadeIn duration={100} key={index}>
+              <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition duration-300 h-full">
+                <img
+                  src={t.image}
+                  alt={t.name}
+                  className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-customYellow"
+                />
 
-              <p className="text-gray-600 italic mb-4 text-sm leading-relaxed">
-                “{t.text}”
-              </p>
+                <p className="text-gray-600 italic mb-4 text-sm leading-relaxed flex-grow">
+                  “{t.text}”
+                </p>
 
-              <div className="flex justify-center mb-2">
-                {[...Array(t.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    size={16}
-                    className="text-yellow-400 fill-yellow-400"
-                  />
-                ))}
+                <div className="flex justify-center mb-2">
+                  {[...Array(t.rating)].map((_, i) => (
+                    <Star
+                      key={i}
+                      size={16}
+                      className="text-yellow-400 fill-yellow-400"
+                    />
+                  ))}
+                </div>
+
+                <h3 className="text-lg font-semibold text-gray-900">{t.name}</h3>
+                <p className="text-customYellow font-medium text-sm">{t.role}</p>
               </div>
-
-              <h3 className="text-lg font-semibold text-gray-900">{t.name}</h3>
-              <p className="text-customYellow font-medium text-sm">{t.role}</p>
-            </div>
             </FadeIn>
           ))}
         </div>

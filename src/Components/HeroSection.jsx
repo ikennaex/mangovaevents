@@ -6,7 +6,7 @@ import FadeIn from "./Fadein";
 
 const HeroSection = () => {
   return (
-    <section className="pt-36 relative w-full min-h-screen flex flex-col justify-center bg-cover bg-center text-white pb-7">
+    <section className="pt-56 relative w-full min-h-screen flex flex-col justify-center bg-cover bg-center text-white pb-7">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={herovideo}
@@ -22,12 +22,12 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <FadeIn duration = {100} >
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
           Welcome to Magnova <span className="text-customYellow">Events</span>
         </h1>
 
         </FadeIn>
-        <p className=" fade-in mt-6 text-lg max-w-2xl mx-auto text-gray-200">
+        <p className=" fade-in mt-6 text-base max-w-2xl mx-auto text-gray-200">
           Crafting unforgettable experiences from intimate gatherings to grand
           celebrations. At{" "}
           <span className="font-semibold text-white">Magnova Events</span>, we

@@ -19,11 +19,11 @@ const WhyChooseUs = () => {
 
       <div className="relative container mx-auto px-6 text-center z-10">
         {/* Section Heading */}
-        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
           Why Choose <span className="text-customYellow">Magnova Events</span>
         </h2>
 
-        <p className="max-w-2xl mx-auto text-gray-700 mb-12">
+        <p className="max-w-2xl mx-auto text-gray-700 mb-12 text-sm">
           We are more than event planners — we are creators of unforgettable experiences. 
           Here’s why clients trust us to bring their visions to life:
         </p>
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
               className="flex items-start gap-4 bg-customYellow/10 rounded-3xl p-6 shadow-md hover:shadow-lg transition"
             >
               <CheckCircle className="w-6 h-6 text-customYellow flex-shrink-0 mt-1" />
-              <p className="text-gray-800 font-medium leading-relaxed">{reason}</p>
+              <p className="text-gray-800 font-medium leading-relaxed text-sm">{reason}</p>
             </div>
             </FadeIn>
           ))}

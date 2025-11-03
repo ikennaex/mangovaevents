@@ -16,19 +16,19 @@ const About = () => {
       <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 z-10">
         {/* About Image */}
         <img
-          className="rounded-[50%_20%_90%_70%_/_60%_30%_70%_40%] border-8 border-customYellow w-full md:w-1/2 object-cover shadow-xl relative z-10"
+          className="rounded-[50%_20%_90%_70%_/_60%_30%_70%_40%] border-8 border-customYellow w-full  md:w-1/2 object-cover shadow-xl relative z-10"
           src={img1}
           alt="About Magnova Events"
         />
 
         {/* About Text */}
         <div className="md:w-1/2 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-2xl md:text-4xl font-bold leading-tight">
             <span className="text-2xl md:text-4xl">About</span>{" "}
             <span className="text-customYellow">Magnova Events</span>
           </h1>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
+          <p className="mt-4 text-gray-700 leading-relaxed text-sm">
             At Magnova Events, we are passionate about transforming ideas into
             unforgettable experiences, whether you are planning an intimate
             gathering, a high-profile corporate event, or a grand celebration.
@@ -43,11 +43,11 @@ const About = () => {
       {/* Our Story Section */}
       <div className="relative container mx-auto px-6 mt-20 flex flex-col md:flex-row items-center gap-10 z-10">
         <div className="md:w-1/2">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Our <span className="text-customYellow">Story</span>
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed text-sm">
             Founded on the belief that no two moments should ever feel the same,
             Magnova Events was born from a passion for creativity, precision,
             and unforgettable experiences. We do not just plan events; we design
@@ -55,7 +55,7 @@ const About = () => {
             lasting impressions.
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
+          <p className="mt-4 text-gray-700 leading-relaxed text-sm">
             From intimate gatherings to grand corporate celebrations, our team
             blends artistry, strategy, and flawless execution. Every detail,
             from lighting and layout to music and mood, aligns perfectly with
