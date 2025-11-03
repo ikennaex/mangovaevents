@@ -6,7 +6,7 @@ import FadeIn from "./Fadein";
 
 const HeroSection = () => {
   return (
-    <section className="pt-36 relative w-full min-h-screen flex flex-col justify-center bg-cover bg-center text-white pt-24 md:pt-0 pb-7">
+    <section className="pt-36 relative w-full min-h-screen flex flex-col justify-center bg-cover bg-center text-white pb-7">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={herovideo}
@@ -90,12 +90,12 @@ const HeroSection = () => {
 };
 
 const ServiceCard = ({ icon, title, text }) => (
-  <div className="bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+  <div className="bg-white text-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col h-full">
     <div className="flex items-center gap-3 mb-4">
       {icon}
       <h3 className="font-semibold text-lg">{title}</h3>
     </div>
-    <p className="text-sm text-gray-600">{text}</p>
+    <p className="text-sm text-gray-600 mt-auto">{text}</p>
   </div>
 );
 

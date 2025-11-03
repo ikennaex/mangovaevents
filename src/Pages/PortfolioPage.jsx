@@ -15,12 +15,12 @@ const PortfolioPage = () => {
   const portfolioItems = [
     { type: "image", src: portfolioImg, title: "Birthday Event" },
     { type: "image", src: portfolioimg2, title: "Wedding Event" },
-    { type: "video", src: portfoliovideo1, title: "Mangova Events" },
+    { type: "video", src: portfoliovideo1, title: "Magnova Events" },
     { type: "video", src: portfoliovideo2, title: "Wedding Reception" },
-    { type: "video", src: portfoliovideo3, title: "Mangova Events" },
+    { type: "video", src: portfoliovideo3, title: "Magnova Events" },
     { type: "video", src: portfoliovideo4, title: "Wedding Reception" },
     { type: "video", src: portfoliovideo5, title: "Wedding Reception" },
-    { type: "video", src: portfoliovideo6, title: "Mangova Events" },
+    { type: "video", src: portfoliovideo6, title: "Magnova Events" },
   ];
 
   return (
