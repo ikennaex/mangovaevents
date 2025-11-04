@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="relative container mx-auto px-6 z-10">
         {/* Brand & Tagline */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-2xl md:text-4xl font-bold text-white">
             Magnova <span className="text-customYellow">Events</span>
           </h2>
           <p className="mt-2 text-gray-400 text-lg">
