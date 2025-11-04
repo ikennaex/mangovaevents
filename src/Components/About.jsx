@@ -47,7 +47,7 @@ const About = () => {
             Our <span className="text-customYellow">Story</span>
           </h2>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
+          <p className="text-gray-700 leading-relaxed text-sm  max-w-3xl mx-auto">
             Magnova Events was born from a dream, a dream to create, to inspire,
             and to bring people together through unforgettable experiences.
             Founded by{" "}
