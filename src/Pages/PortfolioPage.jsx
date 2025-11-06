@@ -30,37 +30,48 @@ const PortfolioPage = () => {
           Our <span className="text-customYellow">Portfolio</span>
         </h2>
 
+        {/* Embedded YouTube Video */}
+        <div className="flex justify-center mb-12">
+          <div className="w-full md:w-2/3 lg:w-1/2 aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-customYellow">
+            <iframe
+              src="https://www.youtube.com/embed/Wh_-AvDBMVk"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+
+        {/* Portfolio Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
-            <FadeIn duration={100}>
-            <div
-              key={index}
-              className="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
-            >
-              {item.type === "image" ? (
-                <img
-                  src={item.src}
-                  alt={item.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              ) : (
-                <video
-                  src={item.src}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              )}
+            <FadeIn duration={100} key={index}>
+              <div className="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer">
+                {item.type === "image" ? (
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                ) : (
+                  <video
+                    src={item.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                )}
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                <h3 className="text-white text-xl font-semibold">
-                  {item.title}
-                </h3>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <h3 className="text-white text-xl font-semibold">
+                    {item.title}
+                  </h3>
+                </div>
               </div>
-            </div>
             </FadeIn>
           ))}
         </div>
