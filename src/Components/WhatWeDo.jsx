@@ -102,7 +102,7 @@ const WhatWeDo = () => {
         </p>
 
         {/* Grid */}
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <FadeIn duration={100} key={index}>
               <div className="relative bg-white rounded-2xl shadow-md p-6 border border-transparent hover:border-pink-200 transition-all duration-300 group">
