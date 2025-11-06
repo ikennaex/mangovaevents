@@ -76,16 +76,16 @@ const services = [
       "We handle conferences, product launches, gala nights, weddings, anniversaries, birthdays, and charity events. Each project is managed with creativity, precision, and attention to detail for guaranteed success.",
   },
   {
+    icon: <Sparkle className="text-cyan-500" size={28} />,
+    title: "MagnovaMoment",
+    description:
+    "Magnova Moments is where stories meet celebration.We capture the beauty, emotions, and behind-the-scenes magic of every event turning fleeting moments into memories that last forever.",
+  },
+  {
     icon: <Briefcase className="text-cyan-500" size={28} />,
     title: "Training & Consultancy",
     description:
       "Magnova Events will soon offer training and consultancy for aspiring event planners and hospitality professionals — sharing knowledge, best practices, and hands-on experience to empower the next generation.",
-  },
-  {
-    icon: <Sparkle className="text-cyan-500" size={28} />,
-    title: "MagnovaMoment",
-    description:
-      "",
   },
 ];
 
