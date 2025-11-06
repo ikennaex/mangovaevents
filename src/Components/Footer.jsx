@@ -71,10 +71,10 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/AwelewaEvents.ng/" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
+              <a href="https://www.instagram.com/magnovaevents_ltd?igsh=Zm94aHpydWJhbHQ4&utm_source=qr" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.tiktok.com/@awelewaevents.ng" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
+              <a href="http://www.tiktok.com/@magnovaevents" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
                 <BsTiktok className="w-5 h-5" />
               </a>
               <a
