@@ -10,7 +10,7 @@ import {
   Globe,
   MessageCircle,
 } from "lucide-react";
-import { BsTiktok, BsWhatsapp } from "react-icons/bs";
+import { BsLinkedin, BsTiktok, BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-router";
 
 const Footer = () => {
@@ -76,6 +76,9 @@ const Footer = () => {
               </a>
               <a href="http://www.tiktok.com/@magnovaevents" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
                 <BsTiktok className="w-5 h-5" />
+              </a>
+              <a href="https://www.linkedin.com/company/magnova-events/" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
+                <BsLinkedin className="w-5 h-5" />
               </a>
               <a
                 href="https://wa.me/+2348079325361" target="_blank"

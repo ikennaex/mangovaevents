@@ -51,7 +51,7 @@ const About = () => {
             Magnova Events was born from a dream, a dream to create, to inspire,
             and to bring people together through unforgettable experiences.
             Founded by{" "}
-            <span className="font-semibold">Miss Dolapo Margaret</span>, a
+            <span className="font-semibold">Ms Dolapo Margaret</span>, a
             graduate of Ekiti State University, Magnova began as a small
             decoration brand called{" "}
             <span className="italic">Awelewa Events</span>. While many waited
