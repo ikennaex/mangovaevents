@@ -74,6 +74,9 @@ const Footer = () => {
               <a href="https://www.instagram.com/magnovaevents_ltd?igsh=Zm94aHpydWJhbHQ4&utm_source=qr" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
                 <Instagram className="w-5 h-5" />
               </a>
+              <a href="https://www.facebook.com/share/1ANTs8XXXc/" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
+                <Facebook className="w-5 h-5" />
+              </a>
               <a href="http://www.tiktok.com/@magnovaevents" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
                 <BsTiktok className="w-5 h-5" />
               </a>
