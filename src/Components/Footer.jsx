@@ -83,6 +83,9 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/magnova-events/" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
                 <BsLinkedin className="w-5 h-5" />
               </a>
+              <a href="http://www.youtube.com/@MagnovaEvents-t1y" target="_blank" className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition">
+                <Youtube className="w-5 h-5" />
+              </a>
               <a
                 href="https://wa.me/+2348079325361" target="_blank"
                 className="p-3 bg-customYellow/20 rounded-full hover:bg-customYellow/40 transition"
