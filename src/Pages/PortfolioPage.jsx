@@ -30,12 +30,45 @@ const PortfolioPage = () => {
           Our <span className="text-customYellow">Portfolio</span>
         </h2>
 
-        {/* Embedded YouTube Video */}
-        <div className="flex justify-center mb-12">
-          <div className="w-full md:w-2/3 lg:w-1/2 aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-customYellow">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {/* Video 1 */}
+          <div className="aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-customYellow">
             <iframe
               src="https://www.youtube.com/embed/Wh_-AvDBMVk"
-              title="YouTube video"
+              title="YouTube video 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+
+          {/* Video 2 */}
+          <div className="aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-customYellow">
+            <iframe
+              src="https://www.youtube.com/embed/TSucG-HYa0c"
+              title="YouTube video 2"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+
+          {/* Video 3 */}
+          <div className="aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-customYellow">
+            <iframe
+              src="https://www.youtube.com/embed/LT7gy5AlcJY"
+              title="YouTube video 3"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+
+          {/* Video 4 */}
+          <div className="aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-customYellow">
+            <iframe
+              src="https://www.youtube.com/embed/e2pPcKiGWY0"
+              title="YouTube video 4"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"
